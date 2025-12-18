@@ -137,13 +137,13 @@ export function Map({ currentPosition, coordinates }: MapProps) {
 
     return (
         <div className="relative h-full w-full">
-        <div ref={mapContainer} className="h-full w-full" />
+            <div ref={mapContainer} className="h-full w-full" />
 
-        {!mapLoaded && (
-        <div className="absolute inset-0 flex items-center justify-center bg-background">
-        <div className="text-muted-foreground">Loading map...</div>
-    </div>
-)}
-    </div>
-)
+            {!mapLoaded && (
+                <div className="absolute inset-0 flex items-center justify-center bg-background">
+                    <div className="text-muted-foreground">Loading map...</div>
+                </div>
+            )}
+        </div>
+    )
 }
